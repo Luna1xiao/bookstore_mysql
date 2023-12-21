@@ -1,0 +1,529 @@
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [14/Dec/2023 18:31:23] "[31m[1mPOST /auth/password HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [14/Dec/2023 18:32:01] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:be.serve:Exception on /seller/send_books [POST]
+Traceback (most recent call last):
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\view\seller.py", line 51, in send_books
+    code, message = s.send_books(store_id, order_id)
+AttributeError: 'Seller' object has no attribute 'send_books'
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 22:58:38] "[35m[1mPOST /seller/send_books HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:be.serve:Exception on /seller/send_books [POST]
+Traceback (most recent call last):
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\view\seller.py", line 51, in send_books
+    code, message = s.send_books(store_id, order_id)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\model\seller.py", line 246, in send_books
+    if not self.cur.fetchone():
+AttributeError: 'Seller' object has no attribute 'cur'
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:00:18] "[35m[1mPOST /seller/send_books HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:be.serve:Exception on /seller/send_books [POST]
+Traceback (most recent call last):
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\view\seller.py", line 51, in send_books
+    code, message = s.send_books(store_id, order_id)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\model\seller.py", line 256, in send_books
+    if order["status"] != 2:
+TypeError: tuple indices must be integers or slices, not str
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:01:04] "[35m[1mPOST /seller/send_books HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:02:35] "POST /seller/send_books HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:14:41] "[33mPOST /seller/receive_books HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:15:34] "[33mPOST /seller/receive_books HTTP/1.1[0m" 404 -
+ERROR:be.serve:Exception on /buyer/receive_books [POST]
+Traceback (most recent call last):
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\view\buyer.py", line 50, in receive_books
+    code, message = b.receive_books(user_id, password, order_id)
+AttributeError: 'Buyer' object has no attribute 'receive_books'
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:15:56] "[35m[1mPOST /buyer/receive_books HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:be.serve:Exception on /buyer/receive_books [POST]
+Traceback (most recent call last):
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\view\buyer.py", line 50, in receive_books
+    code, message = b.receive_books(user_id, password, order_id)
+AttributeError: 'Buyer' object has no attribute 'receive_books'
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:16:15] "[35m[1mPOST /buyer/receive_books HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:be.serve:Exception on /buyer/receive_books [POST]
+Traceback (most recent call last):
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\view\buyer.py", line 50, in receive_books
+    code, message = b.receive_books(user_id, password, order_id)
+AttributeError: 'Buyer' object has no attribute 'receive_books'
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:18:17] "[35m[1mPOST /buyer/receive_books HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:20:40] "[35m[1mPOST /buyer/receive_books HTTP/1.1[0m" 511 -
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:21:15] "[35m[1mPOST /buyer/receive_books HTTP/1.1[0m" 511 -
+ERROR:be.serve:Exception on /buyer/receive_books [POST]
+Traceback (most recent call last):
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\view\buyer.py", line 50, in receive_books
+    code, message = b.receive_books(user_id, password, order_id)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\model\buyer.py", line 209, in receive_books
+    user_password = self.get_user_password(user_id)
+AttributeError: 'Buyer' object has no attribute 'get_user_password'
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:21:51] "[35m[1mPOST /buyer/receive_books HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:be.serve:Exception on /buyer/receive_books [POST]
+Traceback (most recent call last):
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\view\buyer.py", line 50, in receive_books
+    code, message = b.receive_books(user_id, password, order_id)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\model\buyer.py", line 210, in receive_books
+    if user_password[1] != password:
+TypeError: 'int' object is not subscriptable
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:24:28] "[35m[1mPOST /buyer/receive_books HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:be.serve:Exception on /buyer/receive_books [POST]
+Traceback (most recent call last):
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\view\buyer.py", line 50, in receive_books
+    code, message = b.receive_books(user_id, password, order_id)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\model\buyer.py", line 211, in receive_books
+    if user_password[1] != password:
+IndexError: tuple index out of range
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:25:30] "[35m[1mPOST /buyer/receive_books HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:26:11] "[31m[1mPOST /buyer/receive_books HTTP/1.1[0m" 401 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:26:34] "[31m[1mPOST /buyer/receive_books HTTP/1.1[0m" 401 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:27:19] "[31m[1mPOST /buyer/receive_books HTTP/1.1[0m" 401 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:be.serve:Exception on /buyer/receive_books [POST]
+Traceback (most recent call last):
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\view\buyer.py", line 50, in receive_books
+    code, message = b.receive_books(user_id, password, order_id)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\model\buyer.py", line 237, in receive_books
+    seller_id = self.cursor.fetchone()[0]
+TypeError: 'NoneType' object is not subscriptable
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:27:38] "[35m[1mPOST /buyer/receive_books HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:be.serve:Exception on /buyer/receive_books [POST]
+Traceback (most recent call last):
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\view\buyer.py", line 50, in receive_books
+    code, message = b.receive_books(user_id, password, order_id)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\model\buyer.py", line 238, in receive_books
+    print(self.cursor.fetchone()[0])
+TypeError: 'NoneType' object is not subscriptable
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:28:44] "[35m[1mPOST /buyer/receive_books HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:be.serve:Exception on /buyer/receive_books [POST]
+Traceback (most recent call last):
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\view\buyer.py", line 50, in receive_books
+    code, message = b.receive_books(user_id, password, order_id)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\model\buyer.py", line 239, in receive_books
+    print(self.cursor.fetchone()[0])
+TypeError: 'NoneType' object is not subscriptable
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:33:35] "[35m[1mPOST /buyer/receive_books HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:be.serve:Exception on /buyer/receive_books [POST]
+Traceback (most recent call last):
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\view\buyer.py", line 50, in receive_books
+    code, message = b.receive_books(user_id, password, order_id)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\model\buyer.py", line 239, in receive_books
+    print(self.cursor.fetchone()[0])
+TypeError: 'NoneType' object is not subscriptable
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:34:56] "[35m[1mPOST /buyer/receive_books HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:be.serve:Exception on /buyer/receive_books [POST]
+Traceback (most recent call last):
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\view\buyer.py", line 50, in receive_books
+    code, message = b.receive_books(user_id, password, order_id)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\model\buyer.py", line 238, in receive_books
+    print(self.cursor.fetchone()[0])
+TypeError: 'NoneType' object is not subscriptable
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:35:43] "[35m[1mPOST /buyer/receive_books HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:be.serve:Exception on /buyer/receive_books [POST]
+Traceback (most recent call last):
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\view\buyer.py", line 50, in receive_books
+    code, message = b.receive_books(user_id, password, order_id)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\model\buyer.py", line 239, in receive_books
+    print(seller_store[0])
+TypeError: 'NoneType' object is not subscriptable
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:36:53] "[35m[1mPOST /buyer/receive_books HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:be.serve:Exception on /buyer/receive_books [POST]
+Traceback (most recent call last):
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\view\buyer.py", line 50, in receive_books
+    code, message = b.receive_books(user_id, password, order_id)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\model\buyer.py", line 239, in receive_books
+    print(seller_store[1])
+TypeError: 'NoneType' object is not subscriptable
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:37:36] "[35m[1mPOST /buyer/receive_books HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:be.serve:Exception on /buyer/receive_books [POST]
+Traceback (most recent call last):
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\view\buyer.py", line 50, in receive_books
+    code, message = b.receive_books(user_id, password, order_id)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\model\buyer.py", line 239, in receive_books
+    print(seller_store[0])
+TypeError: 'NoneType' object is not subscriptable
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:38:42] "[35m[1mPOST /buyer/receive_books HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:root:MySQL Error: (1146, "Table 'bookstore.users' doesn't exist")
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:42:35] "[35m[1mPOST /buyer/receive_books HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:root:MySQL Error: (1146, "Table 'bookstore.users' doesn't exist")
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:44:10] "[35m[1mPOST /buyer/receive_books HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:root:MySQL Error: (1146, "Table 'bookstore.users' doesn't exist")
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:44:40] "[35m[1mPOST /buyer/receive_books HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [16/Dec/2023 23:45:01] "POST /buyer/receive_books HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 00:08:49] "[35m[1mPOST /search/search_all HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 00:09:03] "[35m[1mPOST /search/search_all HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 00:11:25] "[35m[1mPOST /search/search_all HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 00:11:39] "[35m[1mPOST /search/search_all HTTP/1.1[0m" 528 -
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 00:11:53] "[35m[1mPOST /search/search_all HTTP/1.1[0m" 528 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 00:14:37] "POST /search/search_all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 00:17:04] "POST /search/search_all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 00:17:54] "POST /search/search_all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 00:18:29] "POST /search/search_all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 00:19:03] "POST /search/search_all HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 00:20:23] "POST /search/search_in_store HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:be.serve:Exception on /buyer/cancel [POST]
+Traceback (most recent call last):
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\view\buyer.py", line 58, in cancel
+    code, message = b.cancel(user_id,order_id)
+AttributeError: 'Buyer' object has no attribute 'cancel'
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 00:40:38] "[35m[1mPOST /buyer/cancel HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:be.serve:Exception on /buyer/cancel [POST]
+Traceback (most recent call last):
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\view\buyer.py", line 58, in cancel
+    code, message = b.cancel(user_id,order_id)
+ValueError: too many values to unpack (expected 2)
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 00:41:23] "[35m[1mPOST /buyer/cancel HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 00:42:41] "[35m[1mPOST /buyer/cancel HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 00:45:47] "[35m[1mPOST /buyer/cancel HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:be.serve:Exception on /buyer/cancel [POST]
+Traceback (most recent call last):
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\view\buyer.py", line 58, in cancel
+    code, message = b.cancel(user_id,order_id)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\model\buyer.py", line 280, in cancel
+    self.cursor.execute(query_insert_history, order)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\pymysql\cursors.py", line 146, in execute
+    query = self.mogrify(query, args)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\pymysql\cursors.py", line 125, in mogrify
+    query = query % self._escape_args(args, conn)
+TypeError: not all arguments converted during string formatting
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 00:46:26] "[35m[1mPOST /buyer/cancel HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:be.serve:Exception on /buyer/cancel [POST]
+Traceback (most recent call last):
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\view\buyer.py", line 58, in cancel
+    code, message = b.cancel(user_id,order_id)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\model\buyer.py", line 280, in cancel
+    self.cursor.execute(query_insert_history, order)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\pymysql\cursors.py", line 146, in execute
+    query = self.mogrify(query, args)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\pymysql\cursors.py", line 125, in mogrify
+    query = query % self._escape_args(args, conn)
+TypeError: not all arguments converted during string formatting
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 00:48:39] "[35m[1mPOST /buyer/cancel HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:be.serve:Exception on /buyer/cancel [POST]
+Traceback (most recent call last):
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\view\buyer.py", line 58, in cancel
+    code, message = b.cancel(user_id,order_id)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\model\buyer.py", line 280, in cancel
+    self.cursor.execute(query_insert_history, order)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\pymysql\cursors.py", line 146, in execute
+    query = self.mogrify(query, args)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\pymysql\cursors.py", line 125, in mogrify
+    query = query % self._escape_args(args, conn)
+TypeError: not all arguments converted during string formatting
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 00:49:53] "[35m[1mPOST /buyer/cancel HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:be.serve:Exception on /buyer/cancel [POST]
+Traceback (most recent call last):
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\view\buyer.py", line 58, in cancel
+    code, message = b.cancel(user_id,order_id)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\model\buyer.py", line 281, in cancel
+    self.cursor.execute(query_insert_history, order)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\pymysql\cursors.py", line 146, in execute
+    query = self.mogrify(query, args)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\pymysql\cursors.py", line 125, in mogrify
+    query = query % self._escape_args(args, conn)
+TypeError: unsupported operand type(s) for %: 'tuple' and 'tuple'
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 00:54:06] "[35m[1mPOST /buyer/cancel HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:be.serve:Exception on /buyer/cancel [POST]
+Traceback (most recent call last):
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\view\buyer.py", line 58, in cancel
+    code, message = b.cancel(user_id,order_id)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\model\buyer.py", line 280, in cancel
+    self.cursor.execute("INSERT Into history_order(order_id,user_id,store_id,status,paid_time)" "VALUES (%s %s %s %s %s)"
+TypeError: 'str' object is not callable
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 00:57:37] "[35m[1mPOST /buyer/cancel HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:be.serve:Exception on /buyer/cancel [POST]
+Traceback (most recent call last):
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\view\buyer.py", line 58, in cancel
+    code, message = b.cancel(user_id,order_id)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\model\buyer.py", line 280, in cancel
+    self.cursor.execute("INSERT Into history_order(order_id,user_id,store_id,status)" "VALUES (%s %s %s %s %s)"
+TypeError: 'str' object is not callable
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 00:58:02] "[35m[1mPOST /buyer/cancel HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:be.serve:Exception on /buyer/cancel [POST]
+Traceback (most recent call last):
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\view\buyer.py", line 58, in cancel
+    code, message = b.cancel(user_id,order_id)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\model\buyer.py", line 280, in cancel
+    self.cursor.execute("INSERT Into history_order(order_id,user_id,store_id,status)" "VALUES (%s %s %s %s)"
+TypeError: 'str' object is not callable
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 00:58:18] "[35m[1mPOST /buyer/cancel HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:be.serve:Exception on /buyer/cancel [POST]
+Traceback (most recent call last):
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Luna\anaconda3\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\view\buyer.py", line 58, in cancel
+    code, message = b.cancel(user_id,order_id)
+  File "D:\Êý¾Ý´óÈýÉÏ\project_2\bookstore\be\model\buyer.py", line 280, in cancel
+    self.cursor.execute("INSERT Into history_order(order_id,user_id,store_id,status)" "VALUES (%s %s %s %d)"
+TypeError: 'str' object is not callable
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 00:58:39] "[35m[1mPOST /buyer/cancel HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 00:59:29] "POST /buyer/cancel HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 01:12:49] "GET /shutdown HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 01:19:24] "[35m[1mPOST /buyer/payment HTTP/1.1[0m" 530 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 01:20:23] "[35m[1mPOST /buyer/payment HTTP/1.1[0m" 518 -
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 01:21:06] "[31m[1mPOST /buyer/payment HTTP/1.1[0m" 401 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [17/Dec/2023 02:29:59] "GET /shutdown HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 21:39:38] "[33mPOST /buyer/search_history_order HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 21:40:09] "POST /buyer/history_order HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 21:41:33] "POST /buyer/history_order HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2023 21:42:02] "POST /buyer/history_order HTTP/1.1" 200 -
