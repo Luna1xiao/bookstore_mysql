@@ -9,8 +9,8 @@ error_code = {
     517: "stock level low, book id {}",
     518: "invalid order id {}",
     519: "not sufficient funds, order id {}",
-    520: "error order status {}",
-    521: "",
+    521: "error order status {}",
+    520: "",
     522: "",
     523: "",
     524: "",
@@ -61,7 +61,7 @@ def error_authorization_fail():
     return 401, error_code[401]
 
 def error_order_status():
-    return 520, error_code[520]
+    return 521, error_code[521]
 
 def error_and_message(code, message):
     return code, message
